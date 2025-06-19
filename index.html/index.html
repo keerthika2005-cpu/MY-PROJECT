@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: whitesmoke;
+        }
+        header {
+            background: steelblue;
+            color: white;
+            padding: 0;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px 40px;
+        }
+        .logo {
+            height: 60px;
+            width: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .main-heading {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 1px;
+        }
+        section {
+            margin: 40px auto;
+            max-width: 800px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: steelblue;
+        }
+        img.freelance-img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid steelblue;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: aliceblue;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            padding: 8px;
+            border: 1px solid lightgray;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background:steelblue;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background: dodgerblue;
+        }
+        footer {
+            background: midnightblue;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src="https://cdn-icons-png.flaticon.com/512/4140/4140051.png" alt="Female Logo" class="logo">
+            <h1 class="main-heading">Hi, I'm Keerthi – Your Freelance Expert!</h1>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Welcome to my freelance portfolio! I'm Keerthi, a passionate freelancer with years of experience helping clients bring their ideas to life. Whether you need a stunning website, eye-catching graphics, or a digital marketing strategy, I'm here to help. I believe in clear communication, creative solutions, and delivering results that exceed expectations. My mission is to make your project a success, no matter the size or scope. Let's work together to achieve your goals and grow your business. Thank you for stopping by!
+        </p>
+    </section>
+
+    <!-- Image Section -->
+    <section id="image">
+        <h2>Freelancing in Action</h2>
+        <img class="freelance-img" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Freelancer working on laptop">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>My Services</h2>
+        <ul>
+            <li>Website Development & Design</li>
+            <li>Logo & Brand Identity Creation</li>
+            <li>Content Writing & Copywriting</li>
+            <li>Social Media Management</li>
+            <li>SEO & Online Marketing</li>
+        </ul>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Get to Know Me</h2>
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+            <iframe src="https://www.youtube.com/embed/3tmd-ClpJxA" title="Freelancer Introduction" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
+    </section>
+
+    <!-- Price List Section -->
+    <section id="price-list">
+        <h2>Price List</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Website Development & Design</td>
+                <td>$600</td>
+            </tr>
+            <tr>
+                <td>Logo & Brand Identity Creation</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Content Writing & Copywriting</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Social Media Management</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>SEO & Online Marketing</td>
+                <td>$250</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Form Section -->
+    <section id="contact-form">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact: keerthi.freelancer@email.com | +1 234-567-8901 | Remote Worldwide</p>
+    </footer>
+</body>
+</html> 
